@@ -1,74 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Backyard Aviary</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!-- Flying bird -->
+<div class="flying-bird" aria-hidden="true">🐦</div>
 
-<body>
+<header>
+    <h1>Welcome to the Backyard Aviary</h1>
 
-    <header>
-        <h1>Welcome to the Backyard Aviary</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#tips">Birding Tips</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#tips">Birding Tips</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
+<main>
+
+    <p>
+        Welcome to my little backyard aviary where field notes meet
+        everyday avian discoveries, sharing my true calling with the
+        birdies through birding and bird watching.
+    </p>
+
+    <section>
+        <h2>Discover the Beauty of Birds</h2>
+
         <p>
-            Welcome to my little backyard aviary where field notes meet
-            everyday avian discoveries, sharing my true calling with the
-            birdies through birding / bird watching.
+            Discover the beauty of birds in your own backyard.
+            Join me as I share my experiences and observations
+            of our feathered friends.
         </p>
 
-        <section>
-            <h2>Discover the Beauty of Birds</h2>
-            <p>
-                Discover the beauty of birds in your own backyard.
-                Join me as I share my experiences and observations
-                of our feathered friends.
-            </p>
+        <a
+            href="https://merlin.allaboutbirds.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Open Birding App
+        </a>
+    </section>
 
-            <a href="https://merlin.allaboutbirds.org/" target="_blank">
-                Open Birding App
-            </a>
-        </section>
+    <section id="tips">
+        <h2>Birding Tips</h2>
 
-        <section id="tips">
-            <h2>Birding Tips</h2>
-            <ul>
-                <li>Keep a journal of your bird sightings.</li>
-                <li>Use binoculars for a closer look.</li>
-                <li>Learn to identify birds by their calls.</li>
-            </ul>
-        </section>
+        <ul>
+            <li>Keep a journal of your bird sightings.</li>
+            <li>Use binoculars for a closer look.</li>
+            <li>Learn to identify birds by their calls.</li>
+        </ul>
+    </section>
 
-        <section id="gallery">
-            <h2>The Amazing Variety of Birds</h2>
-            <p>
-                Check out some of the amazing birds I've encountered
-                in my backyard aviary.
-            </p>
+    <section id="gallery">
+        <h2>The Amazing Variety of Birds</h2>
 
-            <div class="gallery">
-                <img src="bird1.jpg" alt="Bird 1">
-                <img src="bird2.jpg" alt="Bird 2">
-                <img src="bird3.jpg" alt="Bird 3">
-            </div>
-        </section>
+        <p>
+            Check out some of the amazing birds I've encountered
+            in my backyard aviary.
+        </p>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Thanks for visiting my backyard aviary!</p>
-        </section>
-    </main>
+        <div class="gallery">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hummingbird.jpg/220px-Hummingbird.jpg"
+                alt="A hummingbird"
+            >
 
-</body>
-</html>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Robin_(Erythrocebus_monitrix).jpg/220px-Robin_(Erythrocebus_monitrix).jpg"
+                alt="A robin"
+            >
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Cassowary.jpg/220px-Cassowary.jpg"
+                alt="A cassowary"
+            >
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Thanks for visiting my backyard aviary!
+        </p>
+    </section>
+
+</main>
+
+<script>
+    const bird = document.querySelector(".flying-bird");
+
+    window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+
+        // Move the bird horizontally as the user scrolls
+        const x = Math.min(scrollPosition * 0.5, 500);
+
+        // Give the bird a gentle up-and-down movement
+        const y = Math.sin(scrollPosition * 0.03) * 30;
+
+        bird.style.transform = `translate(${x}px, ${y}px)`;
+    });
+</script>
