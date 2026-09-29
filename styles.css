@@ -14,11 +14,11 @@ header {
     text-align: center;
     padding: 30px 20px;
     background-color: #d8efcc;
-    border-bottom: 5px solid #2f5d3a; /* dark green */
+    border-bottom: 5px solid #2f5d3a;
 }
 
 h1, h2 {
-    color: #b03060; /* dark pink */
+    color: #b03060;
 }
 
 h1 {
@@ -128,8 +128,6 @@ a:hover {
     font-size: 35px;
     z-index: 1000;
     pointer-events: none;
-
-    /* Makes the bird move smoothly */
     transition: transform 0.4s ease-out;
 }
 
