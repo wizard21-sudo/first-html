@@ -337,3 +337,35 @@ section li {
     object-fit: cover;
     object-position: center;
 }
+
+.blog-cta-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fcf8f6;
+    border-left: 4px solid #702951;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.blog-cta-box p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.birding-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #702951;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.birding-btn:hover {
+    background-color: #541d3c;
+    transform: translateY(-2px);
+}
