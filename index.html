@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +10,14 @@
 
 <body>
 
+    <input type="checkbox" id="banner-toggle" style="display: none;">
+
+    <!-- Greeting Banner -->
+     <div class="greeting-banner">
+        <span> Hey Welcome! Buckle up and enjoy the flight. </span>
+        <label for="banner-toggle" class="close-btn">Got it!</label>
+     </div>
+
     <!-- Header -->
     <header>
         <h1>Welcome to the Backyard Aviary</h1>
@@ -21,9 +28,11 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#tips">Birding Tips</a></li>
+            <li><a href="#tips">Birding Hacks</a></li>
+            <li><a href="#blog">Field Trip Blog</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#spotlight">Spotlight</a></li>
+            <li><a href="#closing">Happy Birding!</a></li>
         </ul>
     </nav>
 
@@ -55,14 +64,97 @@
 
         <!-- Birding tips -->
         <section id="tips">
-            <h2>Birding Tips</h2>
+            <h2>Some Birding Hacks</h2>
 
             <ul>
-                <li>Keep a journal of your bird sightings.</li>
-                <li>Use binoculars for a closer look.</li>
-                <li>Learn to identify birds by their calls.</li>
+                <li><strong>Become a tree ninja:</strong> Move slowly and avoid sudden arm-flailing unless you want the birds to judge your dance moves.</li>
+                <li><strong>Spy gear on budget:</strong> Binoculars are great, but even a decent camera zoom lens turns you into an undercover bird paparazzi.</li>
+                <li><strong>Learn the soundtrack:</strong> Memorize common chirps so you can spot a sneaky singer hiding in the leaves before you even see them.</li>
+                <li><strong>Bribe them wisely:</strong> A simple feeder with water or seeds makes your backyard the hottest VIP lounge in the neighbourhood.</li>
+                <li><strong>Scribble squad:</strong> Note down who you saw or draw a little sketch to keep track of your feathered visitors.</li>
             </ul>
         </section>
+
+        <!-- Birdwalk experience -->
+         <section id="blog">
+            <h2>Field Trip: Morning at Mooncanal, Prayagraj</h2>
+            <p>
+                There is something magical about an early morning walk near the waters of Mooncanal.
+                I recently joined a local group of nature enthusiasts there, armed with a thermos of tea and heavy-duty curiosity.
+            </p>
+
+            <!-- First row of photos (Group & Scene) -->
+             <div class="blog-photo-row">
+
+                <div class="blog-photo-item">
+                    <img
+                     src="images/group.jpeg"
+                     alt="Birding Group" loading="lazy">
+                     <p class="caption">Our little birdwatching group getting ready!</p>
+                </div>
+
+                <div class="blog-photo-item">
+                    <img
+                     src="images/Bird-walk.jpeg"
+                     alt="Bird Walk" loading="lazy">
+                     <p class="caption">Walking along the Mooncanal trails.</p>
+                </div>
+                
+                <div class="blog-photo-item">
+                    <img
+                     src="images/pheasant-tailed-jacana 2.jpeg"
+                     alt="Pheasant Tailed Jacana" loading="lazy">
+                     <p class="caption">A pheasant-tailed Jacana spotted near the water lillies.</p>
+                </div>
+
+                <div class="blog-photo-item">
+                    <img
+                     src="images/sarus-crane.jpeg"
+                     alt="Sarus Crane" loading="lazy">
+                     <p class="caption">A magestic Sarus Crane in the distance.</p>
+                </div>
+
+                </div>
+             </div>
+            <p>
+                Our walk started out with a simple interactive session where we had to name some of the bird species we already knew of
+                but all of us had very similaer answers and at the end of the walk we all were full of curiosity and enthusiasm about such  
+                beautifull birds and serene view of white water lilies around the canal, with this we ended our trip with the bestest memory.
+            </p>
+
+            <!-- Second row of photos -->
+             <div class="blog-photo-row">
+
+                <div class="blog-photo-item">
+                    <img
+                    src="images/ashy-prinia 2.jpeg"
+                    alt="Ashy Prinia" loading="lazy">
+                    <p class="caption">A cute little Ashy Prinia perched on a wire.</p>
+                </div>
+
+                <div class="blog-photo-item">
+                    <img
+                    src="images/asian-openbill 3.jpeg"
+                    alt="Asian Openbill" loading="lazy">
+                    <p class="caption">An Asian Openbill modeling for us humans.</p>
+                </div>
+
+                <div class="blog-photo-item">
+                    <img
+                    src="images/white-throated kingfisher.jpeg"
+                    alt="White Throated Kingfisher" loading="lazy">
+                    <p class="caption">A bright White Throated Kingfisher.</p>
+                </div>
+
+                <div class="blog-photo-item">
+                    <img
+                    src="images/water-lily.jpeg"
+                    alt="Water Lily" loading="lazy">
+                    <p class="caption">Fresh water lilies blooming along the Mooncanal.</p>
+                </div>
+                
+             </div>
+         </section>
 
         <!-- Gallery -->
         <section id="gallery">
@@ -102,14 +194,6 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact</h2>
-
-            <p>
-                Thanks for visiting my backyard aviary!
-            </p>
-        </section>
 
         <!-- Flip Card -->
          <section id="spotlight">
@@ -128,6 +212,15 @@
                 </div>
             </div>
          </section>
+
+         <!-- Closing Note -->
+        <section id="closing">
+            <h2>Keep Looking Up!</h2>
+            <p>
+                Keep exploring everyday as you may spot a new little visitor.
+                Thanks for visiting my backyard aviary!
+            </p>
+        </section>
        
 
     </main>

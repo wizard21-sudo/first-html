@@ -248,3 +248,72 @@ section li {
     align-items: center;
     padding: 20px;
 }
+
+/* Greeting Banner Styling */
+.greeting-banner {
+    background-color: #8b1e4f;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.greeting-banner .close-btn {
+    background: #edf8ed;
+    color: #8b1e4f;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.greeting-banner .close-btn:hover {
+    background: #dff3df;
+}
+
+#banner-toggle:checked ~ .greeting-banner {
+    display: none;
+}
+
+/* Blog Photo Row Layout */
+.blog-photo-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.blog-photo-item {
+    flex: 1 1 280px;
+    text-align: center;
+}
+
+.blog-photo-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.blog-photo-item img:hover {
+    transform: scale(1.02);
+}
+
+.caption {
+    font-style: italic;
+    color: #555;
+    font-size: 0.88rem;
+    margin-top: 6px;
+}
