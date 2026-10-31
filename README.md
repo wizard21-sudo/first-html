@@ -22,7 +22,7 @@
 
 ## Built with
 
- - **HTML5:** Used various tags (<header>, <nav>, <main>, <section>) to give structure to the website.
+ - **HTML5:** Used various tags to give structure to the website.
  - **CSS3:** With the help of this I added my custom page layout design using Flexbox and CSS Grid.
  - **Responsive Design:** Media queries ensuring smooth rendering across different devices.
  - **Interactive CSS Features:** 
