@@ -174,14 +174,6 @@ section li {
     object-position: top center;
 }
 
-
-/* Contact */
-
-#contact {
-    text-align: center;
-}
-
-
 /* Mobile design */
 
 @media (max-width: 768px) {
@@ -335,7 +327,7 @@ section li {
     font-size: 0.8rem;
     cursor: pointer;
     font-weight: bold;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .spotlight-controls label:hover {
