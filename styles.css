@@ -267,19 +267,31 @@ section li {
 .flip-card-front {
     background-color: #ffffff;
     z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .flip-card-front img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top center;
 }
 
 .flip-card-front h3 {
-    margin-top: 15px 0 0 0;
-    color: #333333;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .flip-card-back {
@@ -452,4 +464,10 @@ p {
 
 .blog-cta-box p {
     text-align: justify;
+}
+
+header p,
+.gallery-card .caption,
+.blog-photo-item .caption {
+    text-align: center;
 }
