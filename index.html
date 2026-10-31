@@ -45,7 +45,7 @@
 
             <p>
                 Welcome to my little backyard aviary, where field notes meet everyday avian discoveries. Sharing my true calling with the birdies through birding and bird watching. Beacause birds are magnificient creatures not only because
-                they can fly but also because of the variety of adaptation and features they have. Everything from their varieties, breeding process, living habitat, parenthood are all very unique. Through birding we can have a general idea 
+                they can fly but also because of the variety of adaptation and features they have. Everything from their varieties, breeding process, living habitat, parenthood, migration and other things are all very unique. Through birding we can have a general idea 
                 about these amazing creatures and share our love for them with others as well.
 
             </p>
@@ -388,17 +388,54 @@
          <section id="spotlight">
             <h2>Featured Bird Spotlight</h2>
 
-            <div class="flip-card">
+            <div class="spotlight-container">
+                <input type="radio" name="bird-select" id="bird1" checked>
+                <input type="radio" name="bird-select" id="bird2">
+                <input type="radio" name="bird-select" id="bird3">
+
+            <div class="flip-card card-bird1">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="images/black-drongo.jpg" alt="Black Drongo">
-                        <h3>Black Drongo</h3>
+                        <img src="images/sunbird.jpeg" alt="Sunbird">
+                        <h3>Sunbird</h3>
                     </div>
                     <div class="flip-card-back">
-                        <h3>Quick Fact</h3>
-                        <p>Known for its fearless behaviour and ability to mimic the calls of other birds!</p>
+                        <h3>Quick Fact!</h3>
+                        <p>Known as the "hummingbird of Asia," sunbirds hover briefly to sip nectar and feature beautiful iridescent plumage.</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="flip-card card-bird2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                         <img src="images/asian-green-bee-eater.jpeg" alt="Asian Green Bee Eater">
+                         <h3>Asian Green Bee Eater</h3>
+                    </div>
+                    <div class="flip-card-back">
+                         <h3>Quick Fact!</h3>
+                         <p>They catch flying insects mid-air and expertly rub stinging bees against branches to remove the stinger before eating.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="flip-card card-bird3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                         <img src="images/openbill.jpeg" alt="Openbill">
+                          <h3>Asian Openbill</h3>
+                     </div>
+                     <div class="flip-card-back">
+                          <h3>Quick Fact!</h3>
+                          <p>They are characterised by a unique gap between their curved bills, perfect for prying open freshwater snails.</p>
+                     </div>
+                  </div>
+            </div>
+
+            <div class="spotlight-controls">
+                <label for="bird1">Sunbird</label>
+                <label for="bird2">Asian Green Bee-eater</label>
+                <label for="bird3">Asian Openbill</label>
             </div>
          </section>
 
