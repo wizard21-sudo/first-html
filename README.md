@@ -37,7 +37,7 @@
 
 ## Credits 
 
- - **Photography:** Special thanks to Abhishek Bhatt, a fellow birdwatcher for generously sharing some of his original bird photographs used through gallery and spotlight sections.
+ - **Photography:** Special thanks to Abhishek Bhatt, a fellow birdwatcher for generously sharing some of his original bird photographs he took during our walk which I used in the gallery and spotlight sections along with others that I took myself.
  - **Guidance:** Built with guidance from the Stardance project resources.
 
 ## AI Usage Disclaimer
